@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Delivery</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+    margin: 0;
+}
+nav {
+    background: orangered;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+.offer {
+    background: lightyellow;
+    padding: 20px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.categories {
+    text-align: center;
+    padding: 10px;
+}
+.categories span {
+    background: orange;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.card {
+    background: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+.price {
+    color: orangered;
+    font-weight: bold;
+}
+button {
+    background: orangered;
+    color: white;
+    padding: 8px;
+    border: none;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Foodie</h2>
+<a href="#">Home</a>
+<a href="#categories">Categories</a>
+<a href="#menu">Menu</a>
+</nav>
+
+<div class="offer">
+<h2>Special Offer!</h2>
+<p>Get 20% OFF on your first order.</p>
+</div>
+
+<h2>Food Categories</h2>
+<div class="categories" id="categories">
+<span>Pizza</span>
+<span>Burger</span>
+<span>Noodles</span>
+<span>Desserts</span>
+</div>
+
+<h2>Popular Foods</h2>
+<div class="menu" id="menu">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400" alt="Pizza">
+<h3>Pizza</h3>
+<p class="price">₹199</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Burger">
+<h3>Burger</h3>
+<p class="price">₹129</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400" alt="Noodles">
+<h3>Noodles</h3>
+<p class="price">₹149</p>
+<button>Order Now</button>
+</div>
+
+</div>
+
+<footer>
+<p>Foodie | Online Food Delivery</p>
+</footer>
+
+</body>
+</html>
